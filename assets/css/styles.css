@@ -38,22 +38,44 @@ header {
 .navbar {
     background: #333;
     padding: 15px 0;
-    transition: padding 0.3s ease, background-color 0.3s ease;
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-/* Scrolled Navbar Styles */
-.navbar.scrolled {
-    padding: 5px 0; /* Reduced padding when scrolled */
-    background-color: #222; /* Optional: Change background color on scroll */
+/* Collapsed Navbar Styles */
+.navbar.collapsed {
+    padding: 5px 0; /* Smaller padding when collapsed */
+    background-color: #333; /* Optional: Change background color on collapse */
 }
 
+/* Optional: Logo Resize */
+.navbar .logo {
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+}
+
+.navbar.collapsed .logo {
+    font-size: 18px; /* Smaller logo font size when collapsed */
+}
+
+/* Optional: Navigation Links Styling */
 .navbar ul {
-    list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
 .navbar ul li {
-    margin-left: 20px;
+    margin: 0 10px;
+}
+
+.navbar.collapsed ul li {
+    margin: 0 5px; /* Reduced spacing when collapsed */
 }
 
 .navbar ul li a {
@@ -61,6 +83,10 @@ header {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+}
+
+.navbar.collapsed ul li a {
+    font-size: 14px; /* Smaller font size when collapsed */
 }
 
 .navbar ul li a:hover {
