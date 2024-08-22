@@ -63,7 +63,7 @@ header {
 
 /* Hero Section with Profile Picture */
 .hero {
-    height: 80vh;
+    height: 67vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,8 +81,8 @@ header {
 }
 
 .profile-pic img {
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 5px solid #ffd700;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -251,12 +251,44 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: auto; /* Allow the hero section to adjust height based on content */
+        padding: 20px;
+    }
+
+    .hero-content {
+        padding: 0;
+    }
+
+    .profile-pic img {
+        width: 120px; /* Adjust size for smaller screens */
+        height: 120px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
     .expertise-grid, .projects-grid {
         flex-direction: column;
         align-items: center;
     }
 
     .expertise-item, .project {
-        width: 80%;
+        width: 80%; /* Make items wider on smaller screens */
     }
 }
