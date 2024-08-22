@@ -10,6 +10,13 @@ body {
     color: #333;
     background-color: #f4f4f4;
     line-height: 1.6;
+    padding: 20px; /* Add some padding to the body */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding inside the container */
 }
 
 /* Navigation Bar */
@@ -71,6 +78,7 @@ header {
 .hero h2 {
     font-size: 48px;
     color: #fff;
+    margin-bottom: 20px; /* Add margin below the title */
 }
 
 .hero h2 span {
@@ -80,6 +88,7 @@ header {
 .hero p {
     font-size: 24px;
     color: #fff;
+    margin-bottom: 40px; /* Add margin below the paragraph */
 }
 
 .hero .btn {
@@ -100,6 +109,7 @@ header {
 .section {
     padding: 100px 0;
     text-align: center;
+    margin-bottom: 50px; /* Add margin below sections */
 }
 
 .bg-light {
@@ -144,6 +154,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Add margin between grid items */
 }
 
 .expertise-item:hover {
@@ -169,6 +180,7 @@ header {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin between grid items */
 }
 
 .project img {
@@ -222,4 +234,16 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .expertise-grid, .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expertise-item, .project {
+        width: 80%; /* Make items wider on smaller screens */
+    }
 }
