@@ -34,6 +34,18 @@ header {
     align-items: center;
 }
 
+/* Navbar Default State */
+.navbar {
+    background: #333;
+    padding: 15px 0;
+    transition: padding 0.3s ease;
+}
+
+/* Navbar Scrolled State */
+.navbar.scrolled {
+    padding: 5px 0; /* Smaller padding when scrolled */
+}
+
 .navbar ul {
     list-style: none;
     display: flex;
