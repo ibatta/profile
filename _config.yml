@@ -1,0 +1,4 @@
+title: "Your Name - Profile"
+description: "Personal site to showcase my expertise and profile."
+baseurl: "" # Use to customize the URL
+theme: minima
