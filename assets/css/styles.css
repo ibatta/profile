@@ -10,13 +10,13 @@ body {
     color: #333;
     background-color: #f4f4f4;
     line-height: 1.6;
-    padding: 20px; /* Add some padding to the body */
+    padding: 20px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Add padding inside the container */
+    padding: 0 20px;
 }
 
 /* Navigation Bar */
@@ -61,24 +61,37 @@ header {
     font-weight: bold;
 }
 
-/* Hero Section with Parallax Effect */
+/* Hero Section with Profile Picture */
 .hero {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    height: 80vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #f4f4f4;
 }
 
-.hero .container {
-    text-align: center;
+.hero-content {
+    max-width: 600px;
+}
+
+.profile-pic {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffd700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero h2 {
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 20px; /* Add margin below the title */
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .hero h2 span {
@@ -86,9 +99,9 @@ header {
 }
 
 .hero p {
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 40px; /* Add margin below the paragraph */
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 40px;
 }
 
 .hero .btn {
@@ -107,9 +120,9 @@ header {
 
 /* Section Styling */
 .section {
-    padding: 100px 0;
+    padding: 80px 0;
     text-align: center;
-    margin-bottom: 50px; /* Add margin below sections */
+    margin-bottom: 50px;
 }
 
 .bg-light {
@@ -154,7 +167,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    margin-bottom: 20px; /* Add margin between grid items */
+    margin-bottom: 20px;
 }
 
 .expertise-item:hover {
@@ -180,7 +193,7 @@ header {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Add margin between grid items */
+    margin-bottom: 20px;
 }
 
 .project img {
@@ -244,6 +257,6 @@ footer {
     }
 
     .expertise-item, .project {
-        width: 80%; /* Make items wider on smaller screens */
+        width: 80%;
     }
 }
