@@ -7,35 +7,47 @@
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
+    <!-- Include the reusable header -->
     {% include header.html %}
-    <div class="header">
-      <img src="assets/images/profile-pic.jpg" alt="Profile Picture">
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
-    </div>
+    
+    <div class="main-content">
+      <!-- Main section with profile image and details -->
+      <section class="header">
+        <img src="assets/images/profile-pic.jpg" alt="Profile Picture">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+      </section>
 
-    <div class="content" id="about">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm a software engineer based in Palestine. I specialize in AI, Machine Learning, and web development.
-        I have extensive experience in developing high-quality software solutions. 
-      </p>
+      <!-- About Me Section -->
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm a software engineer based in Palestine. I specialize in AI, Machine Learning, and web development.
+          I have extensive experience in developing high-quality software solutions.
+        </p>
+      </section>
 
-      <h2 id="expertise">Expertise</h2>
-      <ul>
-        <li>Generative AI</li>
-        <li>Machine Learning</li>
-        <li>Software Engineering</li>
-        <li>Web Development</li>
-        <li>Project Management</li>
-      </ul>
+      <!-- Expertise Section -->
+      <section class="expertise" id="expertise">
+        <h2>Expertise</h2>
+        <ul>
+          <li>Generative AI</li>
+          <li>Machine Learning</li>
+          <li>Software Engineering</li>
+          <li>Web Development</li>
+          <li>Project Management</li>
+        </ul>
+      </section>
 
-      <h2 id="projects">Projects</h2>
-      <ul>
-        <li><a href="#">Project 1: AI-based Employee Performance Analysis</a></li>
-        <li><a href="#">Project 2: Web-based Task Management System</a></li>
-        <li><a href="#">Project 3: Generative AI Software for Automation</a></li>
-      </ul>
+      <!-- Projects Section -->
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="#">Project 1: AI-based Employee Performance Analysis</a></li>
+          <li><a href="#">Project 2: Web-based Task Management System</a></li>
+          <li><a href="#">Project 3: Generative AI Software for Automation</a></li>
+        </ul>
+      </section>
     </div>
   </body>
 </html>
