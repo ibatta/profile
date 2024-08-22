@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Software Engineer</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -23,13 +24,137 @@
         </nav>
     </header>
 
-    <!-- Main Hero Section -->
-    <section class="hero">
+    <!-- Main Hero Section with Parallax Effect -->
+    <section class="hero" style="background-image: url('assets/images/hero-bg.jpg');">
         <div class="container">
-            <div class="hero-text">
+            <div class="hero-content">
                 <h2>Hello, I'm <span>Your Name</span></h2>
                 <p>A passionate <strong>Software Engineer</strong> specializing in AI, Machine Learning, and Web Development.</p>
                 <a href="#contact" class="btn">Get in Touch</a>
             </div>
-            <div class="hero-image">
-                <img src="assets/images/profile-pic.jpg" alt="Profi
+        </div>
+    </section>
+
+    <!-- About Me Section with Smooth Scroll -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <p>
+                Hello! I'm a software engineer based in Palestine with expertise in AI and machine learning.
+                I’m passionate about building scalable solutions for real-world problems and constantly learning new technologies.
+                I have experience working with various programming languages and enjoy solving complex technical challenges.
+            </p>
+            <div class="profile-stats">
+                <div class="stat">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>5+ Years Experience</h3>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>50+ Projects Completed</h3>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-award"></i>
+                    <h3>10+ Industry Awards</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section with Hover Effects -->
+    <section id="expertise" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Expertise</h2>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>Generative AI</h3>
+                    <p>Developing AI models for creative content generation, leveraging the latest in deep learning and neural networks.</p>
+                </div>
+                <div class="expertise-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Building and training predictive models with Python, TensorFlow, and scikit-learn for solving complex problems.</p>
+                </div>
+                <div class="expertise-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Designing dynamic, responsive, and user-friendly web applications using modern frameworks like React and Vue.js.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Image Hover Effect -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="assets/images/project1.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>AI-based Employee Performance Analysis System</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/project2.jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>Web-based Task Management System</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/project3.jpg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>Generative AI Software for Automation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <p>Feel free to get in touch for collaboration or opportunities.</p>
+            <a href="mailto:youremail@example.com" class="btn">Send Email</a>
+            <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
