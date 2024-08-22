@@ -34,16 +34,17 @@ header {
     align-items: center;
 }
 
-/* Navbar Default State */
+/* Default Navbar Styles */
 .navbar {
     background: #333;
     padding: 15px 0;
-    transition: padding 0.3s ease;
+    transition: padding 0.3s ease, background-color 0.3s ease;
 }
 
-/* Navbar Scrolled State */
+/* Scrolled Navbar Styles */
 .navbar.scrolled {
-    padding: 5px 0; /* Smaller padding when scrolled */
+    padding: 5px 0; /* Reduced padding when scrolled */
+    background-color: #222; /* Optional: Change background color on scroll */
 }
 
 .navbar ul {
