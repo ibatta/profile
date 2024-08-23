@@ -326,8 +326,8 @@ footer {
     }
 
     .profile-pic img {
-        width: 200px; /* Adjust size for smaller screens */
-        height: 200px;
+        width: 250px; /* Adjust size for smaller screens */
+        height: 250px;
     }
 
     .hero h2 {
