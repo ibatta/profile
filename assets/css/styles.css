@@ -101,7 +101,7 @@ header {
 
 /* Hero Section with Profile Picture */
 .hero {
-    height: 67vh;
+    height: 72vh;
     display: flex;
     align-items: center;
     justify-content: center;
