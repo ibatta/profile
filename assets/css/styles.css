@@ -308,7 +308,7 @@ footer {
 
     /* Hide the nav links on smaller screens */
     .nav-links {
-        display: none;
+        display: none !important;
     }
 
     /* Optionally, you can also reduce the padding or height of the navbar for a more compact look */
