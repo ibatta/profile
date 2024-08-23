@@ -60,34 +60,35 @@ header {
     font-size: 18px; /* Smaller logo font size when collapsed */
 }
 
+
 /* Optional: Navigation Links Styling */
-.navbar ul {
+.navbar .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
 
-.navbar ul li {
+.navbar .nav-links li {
     margin: 0 10px;
 }
 
-.navbar.collapsed ul li {
+.navbar.collapsed .nav-links li {
     margin: 0 5px; /* Reduced spacing when collapsed */
 }
 
-.navbar ul li a {
+.navbar .nav-links li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.navbar.collapsed ul li a {
+.navbar.collapsed .nav-links li a {
     font-size: 14px; /* Smaller font size when collapsed */
 }
 
-.navbar ul li a:hover {
+.navbar .nav-links li a:hover {
     color: #ffd700;
 }
 
