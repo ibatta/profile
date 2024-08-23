@@ -292,6 +292,7 @@ footer {
     text-align: center;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar ul {
@@ -302,6 +303,16 @@ footer {
 
     .navbar ul li {
         margin: 10px 0;
+    }
+
+    /* Hide the nav links on smaller screens */
+    .nav-links {
+        display: none;
+    }
+
+    /* Optionally, you can also reduce the padding or height of the navbar for a more compact look */
+    .navbar {
+        padding: 10px 0;
     }
 
     .hero {
